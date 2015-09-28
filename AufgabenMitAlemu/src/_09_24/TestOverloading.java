@@ -19,6 +19,7 @@ public class TestOverloading {
 		go();//parameterlos
 		go(s);//long
 		go(j);//Integer
+		System.out.println("TESTETSTST");
 //		go(l);//long
 //		Long a =12L; Long b = 13L;
 //		
