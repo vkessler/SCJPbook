@@ -50,11 +50,12 @@ public class FileAufgabe {
 		String s = null;
 		String[] ta = new String[4];
 		int count = 0;
+		System.out.println("\"reader\" Ausgabe Zeile für Zeile:");
 		try {
 			while ( (s = reader.readLine()) != null ) {
 				System.out.println(s);
 				ta[count++] = s;
-				System.out.println(count);
+				//System.out.println(count);
 			}
 		} catch (IOException e) {
 			System.out.println("IOException ist aufgetreten!");
@@ -68,10 +69,20 @@ public class FileAufgabe {
 			}
 		}
 		
-		System.out.println("Arrayausgabe:");
+		System.out.println("\nArrayausgabe:");
 		for (String p : ta) {
 			System.out.println(p);
 		};
+		
+		String[] taUpper = new String[4];
+		for (int i = 0 ; i < ta.length ; i++) {
+			taUpper[i] = ta[i].toUpperCase();
+		}
+		
+		System.out.println("\nArrayausgabe mit uppercase:");
+		for (String pp : taUpper) {
+			System.out.println(pp);
+		}
 
 		
 		

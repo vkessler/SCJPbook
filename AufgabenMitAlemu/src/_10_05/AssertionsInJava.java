@@ -40,22 +40,22 @@ import Prog1Tools.IOTools;
 
 public class AssertionsInJava {
 	
-	private static double divide(double x,  double y){
+	private static int divide(int x,  int y){
 		assert (y != 0) ;//Ich gehe davon aus, dass y !=0
 			return  x / y;
 	
 		}
 	
 	public static void main(String[] args) {
-//		int a= IOTools.readInt("Bitte Zähler eingeben");
-//		int b = IOTools.readInt("Bitte Nenner (Nenner darf nicht 0 sein) eingeben");
+		int a= IOTools.readInt("Bitte Zähler eingeben");
+		int b = IOTools.readInt("Bitte Nenner (Nenner darf nicht 0 sein) eingeben");
 		
-		double result =divide(8, 0);
+		double result =divide(a, b);
 		
 		System.out.println("Quotient aus a /b = " + result);
 		
 		System.out.println("");
-		System.out.println(divide(1, 2));
+		System.out.println(divide(1, 0));
 		
 		
 	}

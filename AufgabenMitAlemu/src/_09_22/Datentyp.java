@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import Prog1Tools.IOTools;
 /*
  * ganze Zahlen Literale sind per Default: int 
- * Fließkomma Zahlen Literale sind per Default: double
+ * Flieï¿½komma Zahlen Literale sind per Default: double
  */
 
 
@@ -20,10 +20,10 @@ public class Datentyp {
 		
 		//a und b
 		
-//		byte a = 70; //-128  <= 70 <= 127, es findet eine Bereichsüberprüfung statt
+//		byte a = 70; //-128  <= 70 <= 127, es findet eine Bereichsï¿½berprï¿½fung statt
 //		short s = 123000;
 //		
-//		float f =  2.3f;//Es findet keine Bereichsüberprüfung statt
+//		float f =  2.3f;//Es findet keine Bereichsï¿½berprï¿½fung statt
 		
 		int x = IOTools.readInt("Bitte operand 1 eingeben: ");
 		int y =  IOTools.readInt("Bitte operand 2 eingeben: ");

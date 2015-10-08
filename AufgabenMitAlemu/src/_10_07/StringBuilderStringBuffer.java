@@ -13,13 +13,17 @@ package _10_07;
 public class StringBuilderStringBuffer {
 	public static void main(String[] args) {
 		StringBuilder sb;
-		StringBuffer buf;
 		sb = new StringBuilder("Spring");
 		
 		StringBuilder result = sb.append(" Summer");
 		
 		System.out.println(sb);//Sehen Sie die Mutablität der Klasse StringBuilder im Gegensatz zu String
 		System.out.println(result);
+		
+		String s1 = "Sommer";
+		s1.concat("Frühling");
+		
+		System.out.println(s1);
 	}
 
 }
