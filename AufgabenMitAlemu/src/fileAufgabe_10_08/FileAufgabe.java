@@ -13,7 +13,7 @@
  * 													
  */
 
-package FileAufgabe_10_08;
+package fileAufgabe_10_08;
 
 import java.io.*;
 
