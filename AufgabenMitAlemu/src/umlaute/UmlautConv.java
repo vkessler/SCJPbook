@@ -1,3 +1,18 @@
+/*
+ Umlaute suchen und ersetzen
+Lernziel
+	Einlesen und Schreieben von Unicode - Zeichen aus einer bzw. in eine Datei.  Gegeben ist die Datei umlaute.txt, die unter anderem deutsche Umlaute und ß enthält.
+Vorgehen:
+1. Speichern Sie sich die Datei umlaute.txt lokal auf ihrem Rechner 
+2. Schreiben Sie ein Programm UmlautConv.java, welches die folgenden Aufgaben erfüllt:
+•	Einlesen der Daten aus der Datei umlaute.txt
+•	Durchsuchen der eingelesenen Zeichen nach den Umlauten  'ä','Ä','ö','Ö','ü','Ü' und 'ß'
+•	Ersetzen der gefunden Zeichen nach folgender Regel:
+			ä - > ae, Ä ->Ae, ö->oe, Ö->Oe, ü->ue, ß->ss	
+•	Schreiben der Zeichen einschließlich der geänderten in die Datei ohneumlaute.txt
+3. Testen Sie das Programm
+ */
+
 package umlaute;
 
 import java.io.File;
@@ -33,6 +48,8 @@ public class UmlautConv {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		
 		
 		System.out.println(f.isFile());
 		
