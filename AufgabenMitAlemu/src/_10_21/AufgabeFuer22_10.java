@@ -41,8 +41,12 @@ public class AufgabeFuer22_10 {
 		System.out.println(tl1);
 		
 		tl1.deleteContact(te3);
-		
 		System.out.println(tl1);
+		
+		TelefonEintrag te5 = new TelefonEintrag("Julian", "Bock", "0225866");		
+		tl1.changeContact(0, te5);
+		System.out.println(tl1);		
+		
 		
 	}
 	
@@ -82,8 +86,12 @@ class TelefonListe {
 		telefonbuch.remove(te);
 	}
 	
-	void changeContact (TelefonEintrag te) {
-		//telefonbuch.set(index, element);
+	void changeContact (int index, TelefonEintrag te) {
+		telefonbuch.set(index, te);
+	}
+	
+	void searchContact () {
+		binarySear
 	}
 	
 	@Override
