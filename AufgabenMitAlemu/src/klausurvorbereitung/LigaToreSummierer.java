@@ -2,6 +2,8 @@ package klausurvorbereitung;
 
 public class LigaToreSummierer {
 	
+
+	
 	public static int summeIn (String land) throws ResultException {
 		
 		LigaTicker lt = new LigaTicker(land);
@@ -13,6 +15,7 @@ public class LigaToreSummierer {
 		}
 		System.out.println("Die Summe aller Tore in der Liga in " + land + " ist " + summe + ".");
 		return summe;
+		
 		
 	}
 	
