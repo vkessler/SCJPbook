@@ -19,10 +19,20 @@ public static void main(String[] args) {
 	r2.tore1 = 0;
 	r2.tore2 = 3;
 	
-	List<Result> resultList = new ArrayList<Result>();
-	resultList.add(r1);
-	resultList.add(r2);
-	System.out.println(resultList);
+	//String land = args[0];
+	String land ="Deutschland";
+	int summe = 0;
+	try {
+		summe = LigaToreSummierer.summeIn(land);
+	} catch (ResultException e) {
+		e.getMessage();
+		e.printStackTrace();
+	}
+	
+//	List<Result> resultList = new ArrayList<Result>();
+//	resultList.add(r1);
+//	resultList.add(r2);
+//	System.out.println(resultList);
 	
 	
 	

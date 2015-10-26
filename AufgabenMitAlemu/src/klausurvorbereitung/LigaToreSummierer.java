@@ -11,7 +11,7 @@ public class LigaToreSummierer {
 		while (lt.resultAvailable()) {
 			if (lt.nextResult().tore1 >= 0 && lt.nextResult().tore2 >= 0) 
 				summe += lt.nextResult().tore1 + lt.nextResult().tore2;
-			else throw new ResultException(team1, team2);
+			else throw new ResultException(lt.nextResult().team1, lt.nextResult().team2);
 		}
 		System.out.println("Die Summe aller Tore in der Liga in " + land + " ist " + summe + ".");
 		return summe;
