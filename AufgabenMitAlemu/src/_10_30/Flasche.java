@@ -15,6 +15,8 @@ package _10_30;
 public class Flasche<T> {//Typparameter: gültiger Bezeichner. Üblich: T oder E, prinzipiel bel. gültiger Bezeichner
 	T inhalt;
 	int vol;
+	
+
 	public void fuellen(T t, int v){
 		inhalt = t;
 		vol = v;

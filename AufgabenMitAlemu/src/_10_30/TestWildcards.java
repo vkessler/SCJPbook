@@ -5,8 +5,12 @@ import java.util.ArrayList;
 public class TestWildcards {
 	public static void main(String[] args) {
 		
-		Flasche<? extends Wein> f = new Flasche<RedWine>();
-		f = new Flasche<WhiteWine>();
+		Flasche<? super  Wein> f = new Flasche<Wein>();
+		f = new Flasche<Wein>();
+		
+		f.fuellen(new RedWine(), 1);
+		
+		f.leeren();
 	//	f = new Flasche<Wasser>(); Wasser IS - A Wein ? nein
 		
 		Flasche<?> f2 = new Flasche<Wasser>();
