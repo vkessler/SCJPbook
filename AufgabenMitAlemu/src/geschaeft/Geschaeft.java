@@ -1,32 +1,49 @@
 package geschaeft;
 
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.TreeMap;
 
 public class Geschaeft {
 	
-	int test;
+	public static final String homePC = "Victor-PC"; 
 	
-	
-
 	public static void main(String[] args) {
 		
 		TreeMap<String, Double> tmp = null;
-		Geschaeft.Person p = new Geschaeft.new Person();
-		p.name = "Fred";
+		String computername = "";
 		
 		try {
-			tmp = ProduktIO.produktListeEinlesen("C:\\Users\\vkessler\\Downloads\\geschaeft\\obstliste.txt");
+			computername = InetAddress.getLocalHost().getHostName();
+			String atHome = "C:\\Users\\Victor\\Desktop\\geschaeft\\obstliste.txt" ;
+			String atComcave = "C:\\Users\\vkessler\\Downloads\\geschaeft\\obstliste.txt";
+			System.out.println(computername);
+			System.out.println(homePC);
+			tmp = ProduktIO.produktListeEinlesen(atHome);
+//			if (computername == homePC) {
+//				tmp = ProduktIO.produktListeEinlesen(atHome);
+//			} else {
+//				tmp = ProduktIO.produktListeEinlesen(atComcave);
+//			}
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		} 
 		System.out.println(tmp);
 		
+		tmp.put(Sonderangebote.Physalis.name(),Sonderangebote.Physalis.getPreis());
+		
+		System.out.println(tmp);
+		
+
+
+
+
+
+
 		
 	}
 
-	static class Person {
-		String name;
-	}
-	
 }
