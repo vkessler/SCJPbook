@@ -18,14 +18,14 @@ public class Geschaeft {
 			computername = InetAddress.getLocalHost().getHostName();
 			String atHome = "C:\\Users\\Victor\\Desktop\\geschaeft\\obstliste.txt" ;
 			String atComcave = "C:\\Users\\vkessler\\Downloads\\geschaeft\\obstliste.txt";
-			System.out.println(computername);
-			System.out.println(homePC);
-			tmp = ProduktIO.produktListeEinlesen(atHome);
-//			if (computername == homePC) {
-//				tmp = ProduktIO.produktListeEinlesen(atHome);
-//			} else {
-//				tmp = ProduktIO.produktListeEinlesen(atComcave);
-//			}
+//			System.out.println(computername);
+//			System.out.println(homePC);
+//			tmp = ProduktIO.produktListeEinlesen(atHome);
+			if (computername.equalsIgnoreCase(homePC)) {
+				tmp = ProduktIO.produktListeEinlesen(atHome);
+			} else {
+				tmp = ProduktIO.produktListeEinlesen(atComcave);
+			}
 		} catch (UnknownHostException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -36,6 +36,7 @@ public class Geschaeft {
 		tmp.put(Sonderangebote.Physalis.name(),Sonderangebote.Physalis.getPreis());
 		
 		System.out.println(tmp);
+		
 		
 
 
