@@ -12,7 +12,6 @@ public class ProduktIO extends Produkt {
 	//String dateipfad = null;
 
 	public static TreeMap<String, Double> produktListeEinlesen(String dateipfad) throws IOException {
-
 		return produktListeEinlesen(new File(dateipfad));
 	}
 	
