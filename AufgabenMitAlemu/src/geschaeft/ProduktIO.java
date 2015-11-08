@@ -39,6 +39,10 @@ public class ProduktIO extends Produkt {
 		} 
 		br.close();
 		return tmp;
+		
+
+		
+		
 	}
 
 }

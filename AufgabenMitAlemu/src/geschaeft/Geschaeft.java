@@ -9,7 +9,7 @@ public class Geschaeft {
 	
 	public static final String homePC = "Victor-PC"; 
 	
-	public static void main(String[]... args) {
+	public static void main(String[] args) {
 		
 		TreeMap<String, Double> tmp = null;
 		String computername = "";
@@ -40,8 +40,11 @@ public class Geschaeft {
 		System.out.println(Thread.currentThread().getId());
 		System.out.println(Sonderangebote.Physalis);
 		
+		Produkt p1 = new Produkt();
+		Produkt p2 = new Obst();
+		Produkt p3 = new Gemuese();
 		
-
+		System.out.println(p3 instanceof Sonderangebote);
 
 
 
