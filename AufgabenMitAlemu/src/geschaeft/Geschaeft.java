@@ -40,12 +40,6 @@ public class Geschaeft {
 		System.out.println(Thread.currentThread().getId());
 		System.out.println(Sonderangebote.Physalis);
 		
-		Produkt p1 = new Produkt();
-		Produkt p2 = new Obst();
-		Produkt p3 = new Gemuese();
-		
-		System.out.println(p3 instanceof Sonderangebote);
-
 
 
 
