@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Call_by_Value2 {
 
-    public static void main(String[]... args) {
+    public static void main(String[] args) {
         Point p1 = new Point(0, 0);
         Point p2 = new Point(100, 100);
         System.out.println("p1: " + p1.x + "|" + p1.y); // p1: 0|0

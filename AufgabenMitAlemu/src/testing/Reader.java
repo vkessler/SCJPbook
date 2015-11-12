@@ -28,6 +28,12 @@ public class Reader extends Thread {
 		new Reader(calculator).start();
 		new Reader(calculator).start();
 		calculator.start();
+		
+		StringBuffer s = new StringBuffer("123456789");
+		System.out.println(s.delete(0,3).replace(1,3,"24")//.delete(4,6)
+				);
+		
+		
 	}
 	
 	static class Calculator extends Thread {
