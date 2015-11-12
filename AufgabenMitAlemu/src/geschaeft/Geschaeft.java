@@ -9,7 +9,7 @@ public class Geschaeft {
 	
 	public static final String homePC = "Victor-PC"; 
 	
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		
 		TreeMap<String, Double> tmp = null;
 		String computername = "";
