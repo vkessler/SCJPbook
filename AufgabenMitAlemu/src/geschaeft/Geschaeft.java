@@ -40,7 +40,10 @@ public class Geschaeft {
 		System.out.println(Thread.currentThread().getId());
 		System.out.println(Sonderangebote.Physalis);
 		
+		
+		int[] a = new int [] {1,2};
 
+		System.out.println(a);
 
 
 
